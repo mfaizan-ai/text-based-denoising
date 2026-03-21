@@ -1,0 +1,1406 @@
+[
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\13-5.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\13-5.jpeg",
+    "task": "reflection",
+    "prompt": "clear window reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\002869.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\002869.png",
+    "task": "deblur",
+    "prompt": "remove motion blur"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\89-5.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\89-5.jpeg",
+    "task": "reflection",
+    "prompt": "restore reflection-free image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000028.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000028.png",
+    "task": "deblur",
+    "prompt": "make the image sharp"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\002142.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\002142.png",
+    "task": "deblur",
+    "prompt": "deblur the image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\rain\\rainstreak_raindrop\\175.png",
+    "target": "H:\\aai\\dtst\\processed\\rain\\gt\\175.png",
+    "task": "derain_both",
+    "prompt": "clean raindrops and streaks"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\98-11.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\98-11.jpeg",
+    "task": "reflection",
+    "prompt": "remove mirror reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000177.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000177.png",
+    "task": "deblur",
+    "prompt": "remove motion blur"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000645.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000645.png",
+    "task": "deblur",
+    "prompt": "deblur the image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\54-13.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\54-13.jpeg",
+    "task": "reflection",
+    "prompt": "remove reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\rain\\rainstreak\\59.png",
+    "target": "H:\\aai\\dtst\\processed\\rain\\gt\\59.png",
+    "task": "derain_streak",
+    "prompt": "restore rain-free image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\31-5.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\31-5.jpeg",
+    "task": "reflection",
+    "prompt": "remove reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\88-6.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\88-6.jpeg",
+    "task": "reflection",
+    "prompt": "restore reflection-free image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000048.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000048.png",
+    "task": "deblur",
+    "prompt": "restore sharp image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\001351.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\001351.png",
+    "task": "deblur",
+    "prompt": "make the image sharp"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\002841.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\002841.png",
+    "task": "deblur",
+    "prompt": "restore sharp image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\46-4.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\46-4.jpeg",
+    "task": "reflection",
+    "prompt": "clean reflection from image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\41-3.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\41-3.jpeg",
+    "task": "reflection",
+    "prompt": "clean reflection from image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000082.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000082.png",
+    "task": "deblur",
+    "prompt": "remove motion blur"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000155.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000155.png",
+    "task": "deblur",
+    "prompt": "remove blur"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\53-8.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\53-8.jpeg",
+    "task": "reflection",
+    "prompt": "clean reflection from image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000018.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000018.png",
+    "task": "deblur",
+    "prompt": "recover clear image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\002151.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\002151.png",
+    "task": "deblur",
+    "prompt": "remove motion blur"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000104.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000104.png",
+    "task": "deblur",
+    "prompt": "restore sharp image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\001049.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\001049.png",
+    "task": "deblur",
+    "prompt": "deblur the image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\15-2.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\15-2.jpeg",
+    "task": "reflection",
+    "prompt": "clear window reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\30-2.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\30-2.jpeg",
+    "task": "reflection",
+    "prompt": "eliminate glass reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000138.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000138.png",
+    "task": "deblur",
+    "prompt": "deblur the image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\002180.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\002180.png",
+    "task": "deblur",
+    "prompt": "restore sharp image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\rain\\rainstreak\\152.png",
+    "target": "H:\\aai\\dtst\\processed\\rain\\gt\\152.png",
+    "task": "derain_streak",
+    "prompt": "eliminate rain streaks"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\76-5.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\76-5.jpeg",
+    "task": "reflection",
+    "prompt": "restore reflection-free image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000618.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000618.png",
+    "task": "deblur",
+    "prompt": "recover clear image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000064.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000064.png",
+    "task": "deblur",
+    "prompt": "make the image sharp"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\002826.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\002826.png",
+    "task": "deblur",
+    "prompt": "make the image sharp"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000059.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000059.png",
+    "task": "deblur",
+    "prompt": "make the image sharp"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\22-1.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\22-1.jpeg",
+    "task": "reflection",
+    "prompt": "remove reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000964.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000964.png",
+    "task": "deblur",
+    "prompt": "recover clear image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\001390.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\001390.png",
+    "task": "deblur",
+    "prompt": "remove blur"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000203.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000203.png",
+    "task": "deblur",
+    "prompt": "make the image sharp"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000727.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000727.png",
+    "task": "deblur",
+    "prompt": "restore sharp image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\rain\\rainstreak_raindrop\\206.png",
+    "target": "H:\\aai\\dtst\\processed\\rain\\gt\\206.png",
+    "task": "derain_both",
+    "prompt": "remove raindrops and rain streaks"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\60-3.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\60-3.jpeg",
+    "task": "reflection",
+    "prompt": "remove mirror reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000742.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000742.png",
+    "task": "deblur",
+    "prompt": "remove motion blur"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\rain\\raindrop\\163.png",
+    "target": "H:\\aai\\dtst\\processed\\rain\\gt\\163.png",
+    "task": "derain_raindrop",
+    "prompt": "clear water droplets"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\001042.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\001042.png",
+    "task": "deblur",
+    "prompt": "deblur the image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000343.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000343.png",
+    "task": "deblur",
+    "prompt": "remove blur"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000994.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000994.png",
+    "task": "deblur",
+    "prompt": "deblur the image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000083.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000083.png",
+    "task": "deblur",
+    "prompt": "remove blur"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000733.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000733.png",
+    "task": "deblur",
+    "prompt": "recover clear image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\94-2.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\94-2.jpeg",
+    "task": "reflection",
+    "prompt": "remove reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\002171.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\002171.png",
+    "task": "deblur",
+    "prompt": "remove blur"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\rain\\rainstreak_raindrop\\205.png",
+    "target": "H:\\aai\\dtst\\processed\\rain\\gt\\205.png",
+    "task": "derain_both",
+    "prompt": "clear rain and droplets"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000614.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000614.png",
+    "task": "deblur",
+    "prompt": "make the image sharp"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\84-11.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\84-11.jpeg",
+    "task": "reflection",
+    "prompt": "remove mirror reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\78-11.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\78-11.jpeg",
+    "task": "reflection",
+    "prompt": "remove mirror reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\rain\\rainstreak_raindrop\\20.png",
+    "target": "H:\\aai\\dtst\\processed\\rain\\gt\\20.png",
+    "task": "derain_both",
+    "prompt": "remove rain effects from image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000713.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000713.png",
+    "task": "deblur",
+    "prompt": "restore sharp image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\90-8.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\90-8.jpeg",
+    "task": "reflection",
+    "prompt": "eliminate glass reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\42-6.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\42-6.jpeg",
+    "task": "reflection",
+    "prompt": "remove mirror reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\95-6.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\95-6.jpeg",
+    "task": "reflection",
+    "prompt": "eliminate glass reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\36-5.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\36-5.jpeg",
+    "task": "reflection",
+    "prompt": "remove mirror reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\rain\\rainstreak\\114.png",
+    "target": "H:\\aai\\dtst\\processed\\rain\\gt\\114.png",
+    "task": "derain_streak",
+    "prompt": "remove streak rain"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\56-4.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\56-4.jpeg",
+    "task": "reflection",
+    "prompt": "clean reflection from image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000241.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000241.png",
+    "task": "deblur",
+    "prompt": "make the image sharp"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\77-16.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\77-16.jpeg",
+    "task": "reflection",
+    "prompt": "restore reflection-free image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\002855.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\002855.png",
+    "task": "deblur",
+    "prompt": "deblur the image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\002508.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\002508.png",
+    "task": "deblur",
+    "prompt": "remove motion blur"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\002178.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\002178.png",
+    "task": "deblur",
+    "prompt": "remove blur"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\002847.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\002847.png",
+    "task": "deblur",
+    "prompt": "remove blur"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\31-7.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\31-7.jpeg",
+    "task": "reflection",
+    "prompt": "clean reflection from image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\rain\\raindrop\\20.png",
+    "target": "H:\\aai\\dtst\\processed\\rain\\gt\\20.png",
+    "task": "derain_raindrop",
+    "prompt": "clear water droplets"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\70-1.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\70-1.jpeg",
+    "task": "reflection",
+    "prompt": "restore reflection-free image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000758.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000758.png",
+    "task": "deblur",
+    "prompt": "make the image sharp"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000617.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000617.png",
+    "task": "deblur",
+    "prompt": "remove blur"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\002120.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\002120.png",
+    "task": "deblur",
+    "prompt": "recover clear image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\002135.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\002135.png",
+    "task": "deblur",
+    "prompt": "recover clear image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\002192.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\002192.png",
+    "task": "deblur",
+    "prompt": "recover clear image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000012.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000012.png",
+    "task": "deblur",
+    "prompt": "remove motion blur"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000582.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000582.png",
+    "task": "deblur",
+    "prompt": "remove motion blur"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\002845.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\002845.png",
+    "task": "deblur",
+    "prompt": "recover clear image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\44-7.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\44-7.jpeg",
+    "task": "reflection",
+    "prompt": "clean reflection from image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\7-2.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\7-2.jpeg",
+    "task": "reflection",
+    "prompt": "remove mirror reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\rain\\raindrop\\151.png",
+    "target": "H:\\aai\\dtst\\processed\\rain\\gt\\151.png",
+    "task": "derain_raindrop",
+    "prompt": "remove raindrops"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\rain\\raindrop\\123.png",
+    "target": "H:\\aai\\dtst\\processed\\rain\\gt\\123.png",
+    "task": "derain_raindrop",
+    "prompt": "remove raindrops"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000544.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000544.png",
+    "task": "deblur",
+    "prompt": "make the image sharp"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\15-3.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\15-3.jpeg",
+    "task": "reflection",
+    "prompt": "restore reflection-free image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\59-2.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\59-2.jpeg",
+    "task": "reflection",
+    "prompt": "restore reflection-free image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\rain\\raindrop\\188.png",
+    "target": "H:\\aai\\dtst\\processed\\rain\\gt\\188.png",
+    "task": "derain_raindrop",
+    "prompt": "restore raindrop-free image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\76-12.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\76-12.jpeg",
+    "task": "reflection",
+    "prompt": "remove reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000321.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000321.png",
+    "task": "deblur",
+    "prompt": "recover clear image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\rain\\rainstreak_raindrop\\121.png",
+    "target": "H:\\aai\\dtst\\processed\\rain\\gt\\121.png",
+    "task": "derain_both",
+    "prompt": "remove raindrops and rain streaks"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\101-7.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\101-7.jpeg",
+    "task": "reflection",
+    "prompt": "remove reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000156.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000156.png",
+    "task": "deblur",
+    "prompt": "deblur the image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000657.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000657.png",
+    "task": "deblur",
+    "prompt": "deblur the image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000175.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000175.png",
+    "task": "deblur",
+    "prompt": "make the image sharp"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\68-9.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\68-9.jpeg",
+    "task": "reflection",
+    "prompt": "remove reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\72-1.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\72-1.jpeg",
+    "task": "reflection",
+    "prompt": "remove mirror reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\002807.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\002807.png",
+    "task": "deblur",
+    "prompt": "make the image sharp"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\62-7.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\62-7.jpeg",
+    "task": "reflection",
+    "prompt": "eliminate glass reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\rain\\rainstreak_raindrop\\43.png",
+    "target": "H:\\aai\\dtst\\processed\\rain\\gt\\43.png",
+    "task": "derain_both",
+    "prompt": "clear rain and droplets"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\89-7.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\89-7.jpeg",
+    "task": "reflection",
+    "prompt": "eliminate glass reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\59-10.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\59-10.jpeg",
+    "task": "reflection",
+    "prompt": "clean reflection from image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\79-3.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\79-3.jpeg",
+    "task": "reflection",
+    "prompt": "clear window reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\62-11.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\62-11.jpeg",
+    "task": "reflection",
+    "prompt": "clean reflection from image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\100-6.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\100-6.jpeg",
+    "task": "reflection",
+    "prompt": "remove reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\rain\\rainstreak_raindrop\\26.png",
+    "target": "H:\\aai\\dtst\\processed\\rain\\gt\\26.png",
+    "task": "derain_both",
+    "prompt": "restore clean image without rain"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\002498.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\002498.png",
+    "task": "deblur",
+    "prompt": "remove motion blur"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\71-18.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\71-18.jpeg",
+    "task": "reflection",
+    "prompt": "clean reflection from image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\95-4.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\95-4.jpeg",
+    "task": "reflection",
+    "prompt": "remove mirror reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\39-2.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\39-2.jpeg",
+    "task": "reflection",
+    "prompt": "eliminate glass reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\51-10.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\51-10.jpeg",
+    "task": "reflection",
+    "prompt": "clear window reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\26-3.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\26-3.jpeg",
+    "task": "reflection",
+    "prompt": "remove reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000547.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000547.png",
+    "task": "deblur",
+    "prompt": "remove motion blur"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\81-7.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\81-7.jpeg",
+    "task": "reflection",
+    "prompt": "clean reflection from image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\23-4.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\23-4.jpeg",
+    "task": "reflection",
+    "prompt": "clear window reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\71-6.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\71-6.jpeg",
+    "task": "reflection",
+    "prompt": "remove mirror reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000038.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000038.png",
+    "task": "deblur",
+    "prompt": "remove blur"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\86-10.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\86-10.jpeg",
+    "task": "reflection",
+    "prompt": "remove mirror reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\001045.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\001045.png",
+    "task": "deblur",
+    "prompt": "restore sharp image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\82-6.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\82-6.jpeg",
+    "task": "reflection",
+    "prompt": "clean reflection from image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\002139.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\002139.png",
+    "task": "deblur",
+    "prompt": "deblur the image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000291.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000291.png",
+    "task": "deblur",
+    "prompt": "deblur the image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\001355.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\001355.png",
+    "task": "deblur",
+    "prompt": "remove blur"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000234.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000234.png",
+    "task": "deblur",
+    "prompt": "remove blur"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\5-1.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\5-1.jpeg",
+    "task": "reflection",
+    "prompt": "remove reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\52-13.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\52-13.jpeg",
+    "task": "reflection",
+    "prompt": "clear window reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000732.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000732.png",
+    "task": "deblur",
+    "prompt": "deblur the image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000558.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000558.png",
+    "task": "deblur",
+    "prompt": "deblur the image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000145.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000145.png",
+    "task": "deblur",
+    "prompt": "recover clear image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\67-5.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\67-5.jpeg",
+    "task": "reflection",
+    "prompt": "restore reflection-free image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000971.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000971.png",
+    "task": "deblur",
+    "prompt": "make the image sharp"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\rain\\rainstreak_raindrop\\193.png",
+    "target": "H:\\aai\\dtst\\processed\\rain\\gt\\193.png",
+    "task": "derain_both",
+    "prompt": "restore clean image without rain"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\rain\\rainstreak\\118.png",
+    "target": "H:\\aai\\dtst\\processed\\rain\\gt\\118.png",
+    "task": "derain_streak",
+    "prompt": "remove rain streaks"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\102-3.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\102-3.jpeg",
+    "task": "reflection",
+    "prompt": "restore reflection-free image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\51-13.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\51-13.jpeg",
+    "task": "reflection",
+    "prompt": "clear window reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000648.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000648.png",
+    "task": "deblur",
+    "prompt": "restore sharp image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\61-4.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\61-4.jpeg",
+    "task": "reflection",
+    "prompt": "remove reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000310.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000310.png",
+    "task": "deblur",
+    "prompt": "remove blur"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\91-4.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\91-4.jpeg",
+    "task": "reflection",
+    "prompt": "clean reflection from image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\rain\\rainstreak\\175.png",
+    "target": "H:\\aai\\dtst\\processed\\rain\\gt\\175.png",
+    "task": "derain_streak",
+    "prompt": "remove rain streaks"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\rain\\rainstreak_raindrop\\176.png",
+    "target": "H:\\aai\\dtst\\processed\\rain\\gt\\176.png",
+    "task": "derain_both",
+    "prompt": "remove all rain artifacts"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\72-11.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\72-11.jpeg",
+    "task": "reflection",
+    "prompt": "clear window reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\30-3.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\30-3.jpeg",
+    "task": "reflection",
+    "prompt": "remove mirror reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\001008.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\001008.png",
+    "task": "deblur",
+    "prompt": "remove blur"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\52-12.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\52-12.jpeg",
+    "task": "reflection",
+    "prompt": "clean reflection from image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\63-8.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\63-8.jpeg",
+    "task": "reflection",
+    "prompt": "clear window reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\93-7.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\93-7.jpeg",
+    "task": "reflection",
+    "prompt": "eliminate glass reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000015.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000015.png",
+    "task": "deblur",
+    "prompt": "remove blur"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\001344.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\001344.png",
+    "task": "deblur",
+    "prompt": "restore sharp image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\36-6.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\36-6.jpeg",
+    "task": "reflection",
+    "prompt": "eliminate glass reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\002504.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\002504.png",
+    "task": "deblur",
+    "prompt": "make the image sharp"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\002123.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\002123.png",
+    "task": "deblur",
+    "prompt": "restore sharp image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\99-2.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\99-2.jpeg",
+    "task": "reflection",
+    "prompt": "clean reflection from image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000056.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000056.png",
+    "task": "deblur",
+    "prompt": "recover clear image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\rain\\raindrop\\169.png",
+    "target": "H:\\aai\\dtst\\processed\\rain\\gt\\169.png",
+    "task": "derain_raindrop",
+    "prompt": "remove droplets from image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000296.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000296.png",
+    "task": "deblur",
+    "prompt": "make the image sharp"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\002879.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\002879.png",
+    "task": "deblur",
+    "prompt": "restore sharp image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\90-7.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\90-7.jpeg",
+    "task": "reflection",
+    "prompt": "eliminate glass reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\65-5.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\65-5.jpeg",
+    "task": "reflection",
+    "prompt": "restore reflection-free image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\72-7.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\72-7.jpeg",
+    "task": "reflection",
+    "prompt": "remove reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\002867.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\002867.png",
+    "task": "deblur",
+    "prompt": "deblur the image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\002483.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\002483.png",
+    "task": "deblur",
+    "prompt": "remove blur"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\29-3.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\29-3.jpeg",
+    "task": "reflection",
+    "prompt": "clear window reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000217.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000217.png",
+    "task": "deblur",
+    "prompt": "recover clear image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\rain\\rainstreak_raindrop\\210.png",
+    "target": "H:\\aai\\dtst\\processed\\rain\\gt\\210.png",
+    "task": "derain_both",
+    "prompt": "clean raindrops and streaks"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\68-2.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\68-2.jpeg",
+    "task": "reflection",
+    "prompt": "remove reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\101-2.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\101-2.jpeg",
+    "task": "reflection",
+    "prompt": "remove reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\107-2.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\107-2.jpeg",
+    "task": "reflection",
+    "prompt": "eliminate glass reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\001397.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\001397.png",
+    "task": "deblur",
+    "prompt": "recover clear image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\66-6.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\66-6.jpeg",
+    "task": "reflection",
+    "prompt": "remove reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\002198.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\002198.png",
+    "task": "deblur",
+    "prompt": "restore sharp image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\001388.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\001388.png",
+    "task": "deblur",
+    "prompt": "remove blur"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\002824.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\002824.png",
+    "task": "deblur",
+    "prompt": "recover clear image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000715.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000715.png",
+    "task": "deblur",
+    "prompt": "deblur the image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\002500.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\002500.png",
+    "task": "deblur",
+    "prompt": "deblur the image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\78-1.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\78-1.jpeg",
+    "task": "reflection",
+    "prompt": "eliminate glass reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\002883.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\002883.png",
+    "task": "deblur",
+    "prompt": "make the image sharp"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000978.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000978.png",
+    "task": "deblur",
+    "prompt": "restore sharp image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\2-1.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\2-1.jpeg",
+    "task": "reflection",
+    "prompt": "remove mirror reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\74-8.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\74-8.jpeg",
+    "task": "reflection",
+    "prompt": "remove reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\001313.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\001313.png",
+    "task": "deblur",
+    "prompt": "make the image sharp"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\74-5.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\74-5.jpeg",
+    "task": "reflection",
+    "prompt": "clean reflection from image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\2-5.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\2-5.jpeg",
+    "task": "reflection",
+    "prompt": "remove mirror reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\92-7.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\92-7.jpeg",
+    "task": "reflection",
+    "prompt": "eliminate glass reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\50-10.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\50-10.jpeg",
+    "task": "reflection",
+    "prompt": "remove reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\32-2.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\32-2.jpeg",
+    "task": "reflection",
+    "prompt": "clean reflection from image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000152.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000152.png",
+    "task": "deblur",
+    "prompt": "remove blur"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000298.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000298.png",
+    "task": "deblur",
+    "prompt": "recover clear image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000159.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000159.png",
+    "task": "deblur",
+    "prompt": "remove blur"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\81-3.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\81-3.jpeg",
+    "task": "reflection",
+    "prompt": "remove mirror reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\002809.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\002809.png",
+    "task": "deblur",
+    "prompt": "remove motion blur"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\002802.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\002802.png",
+    "task": "deblur",
+    "prompt": "restore sharp image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\001018.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\001018.png",
+    "task": "deblur",
+    "prompt": "recover clear image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\70-3.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\70-3.jpeg",
+    "task": "reflection",
+    "prompt": "remove reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\101-5.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\101-5.jpeg",
+    "task": "reflection",
+    "prompt": "clean reflection from image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\64-12.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\64-12.jpeg",
+    "task": "reflection",
+    "prompt": "eliminate glass reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\53-5.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\53-5.jpeg",
+    "task": "reflection",
+    "prompt": "clean reflection from image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\002516.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\002516.png",
+    "task": "deblur",
+    "prompt": "remove motion blur"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000335.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000335.png",
+    "task": "deblur",
+    "prompt": "remove motion blur"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\001044.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\001044.png",
+    "task": "deblur",
+    "prompt": "recover clear image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\53-4.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\53-4.jpeg",
+    "task": "reflection",
+    "prompt": "restore reflection-free image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\28-8.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\28-8.jpeg",
+    "task": "reflection",
+    "prompt": "eliminate glass reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\93-2.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\93-2.jpeg",
+    "task": "reflection",
+    "prompt": "clear window reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\90-12.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\90-12.jpeg",
+    "task": "reflection",
+    "prompt": "clean reflection from image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\rain\\rainstreak\\34.png",
+    "target": "H:\\aai\\dtst\\processed\\rain\\gt\\34.png",
+    "task": "derain_streak",
+    "prompt": "clean rain streak artifacts"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\97-2.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\97-2.jpeg",
+    "task": "reflection",
+    "prompt": "clear window reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\95-7.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\95-7.jpeg",
+    "task": "reflection",
+    "prompt": "clear window reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\55-8.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\55-8.jpeg",
+    "task": "reflection",
+    "prompt": "restore reflection-free image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\64-11.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\64-11.jpeg",
+    "task": "reflection",
+    "prompt": "restore reflection-free image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000095.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000095.png",
+    "task": "deblur",
+    "prompt": "remove blur"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000093.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000093.png",
+    "task": "deblur",
+    "prompt": "recover clear image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\82-3.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\82-3.jpeg",
+    "task": "reflection",
+    "prompt": "restore reflection-free image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\86-11.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\86-11.jpeg",
+    "task": "reflection",
+    "prompt": "eliminate glass reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\002816.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\002816.png",
+    "task": "deblur",
+    "prompt": "restore sharp image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000033.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000033.png",
+    "task": "deblur",
+    "prompt": "recover clear image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\002113.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\002113.png",
+    "task": "deblur",
+    "prompt": "make the image sharp"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000595.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000595.png",
+    "task": "deblur",
+    "prompt": "recover clear image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\rain\\rainstreak_raindrop\\209.png",
+    "target": "H:\\aai\\dtst\\processed\\rain\\gt\\209.png",
+    "task": "derain_both",
+    "prompt": "clear rain and droplets"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\rain\\raindrop\\207.png",
+    "target": "H:\\aai\\dtst\\processed\\rain\\gt\\207.png",
+    "task": "derain_raindrop",
+    "prompt": "restore raindrop-free image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\22-6.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\22-6.jpeg",
+    "task": "reflection",
+    "prompt": "remove reflection"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000172.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000172.png",
+    "task": "deblur",
+    "prompt": "make the image sharp"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\67-13.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\67-13.jpeg",
+    "task": "reflection",
+    "prompt": "restore reflection-free image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000590.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000590.png",
+    "task": "deblur",
+    "prompt": "remove blur"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000968.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000968.png",
+    "task": "deblur",
+    "prompt": "deblur the image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000737.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000737.png",
+    "task": "deblur",
+    "prompt": "recover clear image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\trainigPairs\\B\\60-13.jpeg",
+    "target": "H:\\aai\\dtst\\processed\\trainigPairs\\A\\60-13.jpeg",
+    "task": "reflection",
+    "prompt": "restore reflection-free image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000161.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000161.png",
+    "task": "deblur",
+    "prompt": "deblur the image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000103.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000103.png",
+    "task": "deblur",
+    "prompt": "deblur the image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000605.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000605.png",
+    "task": "deblur",
+    "prompt": "remove motion blur"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\002819.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\002819.png",
+    "task": "deblur",
+    "prompt": "recover clear image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\rain\\rainstreak_raindrop\\51.png",
+    "target": "H:\\aai\\dtst\\processed\\rain\\gt\\51.png",
+    "task": "derain_both",
+    "prompt": "remove rain effects from image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\002856.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\002856.png",
+    "task": "deblur",
+    "prompt": "deblur the image"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\rain\\rainstreak_raindrop\\25.png",
+    "target": "H:\\aai\\dtst\\processed\\rain\\gt\\25.png",
+    "task": "derain_both",
+    "prompt": "clear rain and droplets"
+  },
+  {
+    "input": "H:\\aai\\dtst\\processed\\blur\\dirty\\000166.png",
+    "target": "H:\\aai\\dtst\\processed\\blur\\clear\\000166.png",
+    "task": "deblur",
+    "prompt": "recover clear image"
+  }
+]
