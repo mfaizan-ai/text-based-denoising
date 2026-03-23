@@ -1,0 +1,18 @@
+
+# ignore directories 
+data/
+dataset/
+__pycache__/
+outputs/
+
+
+
+
+# ignore files types 
+*.pdf
+*.pth
+*.pt
+*.csv 
+*.xml
+*.json 
+*.xz
