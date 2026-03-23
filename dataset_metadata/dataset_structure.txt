@@ -1,0 +1,21 @@
+└───dataset_full
+    ├───blur
+    │   └───real
+    │       ├───blended
+    │       └───clean
+    ├───raindrop
+    │   └───syn
+    │       ├───blended
+    │       └───clean
+    ├───rainstreak
+    │   └───syn
+    │       ├───blended
+    │       └───clean
+    ├───rainstreak_raindrop
+    │   └───syn
+    │       ├───blended
+    │       └───clean
+    └───reflection
+        └───syn
+            ├───blended
+            └───clean
