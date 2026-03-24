@@ -2,6 +2,7 @@
 # ignore directories 
 data/
 dataset/
+data_old/
 __pycache__/
 outputs/
 

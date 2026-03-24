@@ -1,0 +1,11 @@
+
+================================================================================
+[TASK SUMMARY]
+- BLUR (REAL): 1029 pairs | Average: 1280x720 | Formats: PNG
+- RAINDROP (SYN): 218 pairs | Average: 1296x728 | Formats: PNG
+- RAINSTREAK (SYN): 218 pairs | Average: 1296x728 | Formats: PNG
+- RAINSTREAK_RAINDROP (SYN): 218 pairs | Average: 1296x728 | Formats: PNG
+- REFLECTION (SYN): 1018 pairs | Average: 400x400 | Formats: JPEG
+
+[TOTAL]: 2701 pairs across 5 tasks.
+================================================================================
