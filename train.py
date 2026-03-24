@@ -806,16 +806,16 @@ def main():
     )
     transformer.train()
 
-'''
-    # Task embedding — learnable, same role as loaded embeds_dict at inference
-    # Hidden dim 4096 matches Qwen-Image-Edit-2509 transformer hidden size
-    task_embed = TaskEmbedding(n_tokens=77, hidden_dim=4096).to(device)
-    task_embed.train()
+    '''
+        # Task embedding — learnable, same role as loaded embeds_dict at inference
+        # Hidden dim 4096 matches Qwen-Image-Edit-2509 transformer hidden size
+        task_embed = TaskEmbedding(n_tokens=77, hidden_dim=4096).to(device)
+        task_embed.train()
 
-    if world_size > 1:
-        transformer = DDP(transformer, device_ids=[args.local_rank])
-        task_embed  = DDP(task_embed,  device_ids=[args.local_rank])
-'''
+        if world_size > 1:
+            transformer = DDP(transformer, device_ids=[args.local_rank])
+            task_embed  = DDP(task_embed,  device_ids=[args.local_rank])
+    '''
 
     # ── Loss  ─────────────────────────────────────────────────────────────────
     criterion = ReflectionRemovalLoss(lambda_lpips=args.lambda_lpips, device=device)
