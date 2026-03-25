@@ -5,7 +5,7 @@ dataset/
 data_old/
 __pycache__/
 outputs/
-
+wandb/
 
 
 

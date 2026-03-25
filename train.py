@@ -186,7 +186,6 @@ def get_args():
 
 
 # ── Distributed helpers ───────────────────────────────────────────────────────
-
 def is_main_process():
     return not dist.is_initialized() or dist.get_rank() == 0
 
@@ -200,7 +199,6 @@ def setup_distributed(local_rank: int):
 
 
 # ── Dataset ───────────────────────────────────────────────────────────────────
-
 # CHANGED: ReflectionPairDataset (hardcoded folder structure, no text embeds)
 # is replaced by JsonRestorationDataset which:
 #   - reads pairs from a JSON metadata file
@@ -318,21 +316,24 @@ class JsonRestorationDataset(Dataset):
         return blended, clean
 
     # ── Embedding loader ──────────────────────────────────────────────────────
-
     def _load_embed(self, task_id: int) -> torch.Tensor:
-        """
-        Randomly sample one of the 20 pre-computed embeddings for this task.
-        Returns (MAX_SEQ_LEN, hidden_dim) — batch dim is added by collate_fn.
-        """
         task_name = TASK_ID_TO_NAME.get(task_id, "reflection")
         idx       = random.randint(0, self.EMBED_POOL_SIZE - 1)
         path      = self.embed_root / task_name / f"{idx}.pt"
-        embed     = torch.load(path, weights_only=True)   # (1, MAX_SEQ_LEN, D)
-        return embed.squeeze(0)                            # (MAX_SEQ_LEN, D)
+        embed     = torch.load(path, weights_only=True)   # (1, seq_len, D)
+        embed     = embed.squeeze(0)                       # (seq_len, D)
+
+        seq_len, D = embed.shape
+        if seq_len < MAX_SEQ_LEN:
+            pad   = embed.new_zeros(MAX_SEQ_LEN - seq_len, D)
+            embed = torch.cat([embed, pad], dim=0)         # pad to MAX_SEQ_LEN
+        else:
+            embed = embed[:MAX_SEQ_LEN]                    # truncate if over
+
+        return embed                                       # (MAX_SEQ_LEN, D)
 
 
 # ── Model loading ─────────────────────────────────────────────────────────────
-
 def load_vae(uri: str, device: torch.device) -> AutoencoderKLQwenImage:
     """Load and permanently freeze the VAE."""
     vae = AutoencoderKLQwenImage.from_pretrained(
@@ -405,7 +406,6 @@ def decode(latents: torch.Tensor, vae: AutoencoderKLQwenImage) -> torch.Tensor:
 
 
 # ── Transformer forward pass ──────────────────────────────────────────────────
-
 def flow_step_train(
     latent_input:  torch.Tensor,                  # (B, C, 1, H, W)
     transformer:   QwenImageTransformer2DModel,
@@ -459,7 +459,6 @@ def flow_step_train(
 
 
 # ── Loss ──────────────────────────────────────────────────────────────────────
-
 class ReflectionRemovalLoss(torch.nn.Module):
     """
     Flow-matching MSE loss in latent space, plus optional LPIPS perceptual loss.
@@ -517,7 +516,6 @@ def get_scheduler(optimizer, warmup_steps: int, total_steps: int):
 
 
 # ── Validation ────────────────────────────────────────────────────────────────
-
 # CHANGED: task_embed parameter removed entirely — embeddings come from the
 # DataLoader batch just like they do during training.
 @torch.no_grad()
@@ -574,8 +572,7 @@ def validate(
     }
 
 
-# ── Checkpoint helpers ────────────────────────────────────────────────────────
-
+# ── Checkpont helpers ────────────────────────────────────────────────────────
 # CHANGED: task_embed removed from both save and load — checkpoints only
 # contain LoRA weights + optimizer/scheduler state.
 def save_checkpoint(
@@ -644,7 +641,6 @@ def load_checkpoint(
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────
-
 def main():
     args = get_args()
     device, rank, world_size = setup_distributed(args.local_rank)

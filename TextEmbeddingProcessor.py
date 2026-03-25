@@ -1,3 +1,9 @@
+'''
+TextEmbeddingProcessor
+Faizan fixed the bugs in the original code and added comments for clarity. This script loads a QwenImageEditPipeline, encodes text prompts into embeddings, and saves them as .pt files. The pipeline is used in a way that it only processes the text prompts to get the embeddings, while a dummy image is provided since the pipeline expects an image input. The output embeddings are saved in a structured directory format based on task names.
+'''
+
+
 import torch
 import json
 from pathlib import Path
