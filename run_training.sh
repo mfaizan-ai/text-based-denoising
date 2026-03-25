@@ -30,13 +30,13 @@ echo "Started at  : $(date)"
 echo "---"
 
 # ── Training ──────────────────────────────────────────────────────────────────
-python train.py \
+python -u train.py \
     --data-root    dataset/ \
     --meta-dir     dataset_metadata/ \
     --embed-dir    text/text_embeddings/ \
     --output-dir   runs/trainingv1.0 \
     --epochs       20 \
-    --batch-size   16 \
+    --batch-size   8 \
     --grad-accum   2 \
     --lr           1e-4 \
     --resolution   512 \
