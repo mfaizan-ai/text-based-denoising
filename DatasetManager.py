@@ -189,7 +189,7 @@ class DatasetManager:
 
 if __name__ == "__main__":
     # All metadata will be generated and saved into the 'dataset_metadata' folder
-    manager = DatasetManager(root_path="dataset/dataset_full", output_folder="dataset_metadata")
+    manager = DatasetManager(root_path="dataset_full", output_folder="dataset_metadata")
 
     # Run the audit and split process
     manager.scan_database()
