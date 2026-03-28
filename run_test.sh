@@ -1,4 +1,4 @@
-#!/bin/bash
+' 0#!/bin/bash
 #SBATCH --job-name=windowseat_testing
 #SBATCH --output=runs/testv1_0/slurm_%j.out
 #SBATCH --error=runs/testv1_0/slurm_%j.err
