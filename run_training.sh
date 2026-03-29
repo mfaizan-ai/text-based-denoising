@@ -1,7 +1,7 @@
 #!/bin/bash
-#SBATCH --job-name=windowseat_baseline
-#SBATCH --output=runs/baseline_full/slurm_%j.out
-#SBATCH --error=runs/baseline_full/slurm_%j.err
+#SBATCH --job-name=windowseat_balance_sampling
+#SBATCH --output=runs/train_balance_sampling/slurm_%j.out
+#SBATCH --error=runs/train_balance_sampling/slurm_%j.err
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --gres=gpu:1
@@ -26,7 +26,7 @@ source ~/.bashrc
 conda activate windowseat
 
 # Create output dir before SLURM tries to write logs to it
-mkdir -p $PROJECT/runs/baseline_full
+mkdir -p $PROJECT/runs/train_balance_sampling
 
 # ── Job info ───────────────────────────────────────────────────────────────────
 echo "======================================================================"
@@ -47,15 +47,16 @@ ls $PROJECT/dataset_metadata/train_metadata.json && echo "train metadata OK"
 ls $PROJECT/dataset_metadata/val_metadata.json   && echo "val metadata OK"
 ls $PROJECT/dataset_metadata/test_metadata.json  && echo "test metadata OK"
 ls $PROJECT/text/text_embeddings/blur/0.pt       && echo "embeddings OK"
-ls $PROJECT/train.py                             && echo "train.py OK"
+ls $PROJECT/train_windowseat.py                             && echo "train.py OK"
 echo "---------------------"
 
 # ── Training — all paths absolute ─────────────────────────────────────────────
-python -u $PROJECT/train.py \
+python -u $PROJECT/train_windowseat.py \
     --data-root    $PROJECT/dataset \
     --meta-dir     $PROJECT/dataset_metadata \
     --embed-dir    $PROJECT/text/text_embeddings \
-    --output-dir   $PROJECT/runs/baseline_full \
+    --output-dir   $PROJECT/runs/train_balance_sampling \
+    --use-balanced-sampling \
     --total-steps  11000 \
     --batch-size   2 \
     --grad-accum   1 \
@@ -73,8 +74,8 @@ python -u $PROJECT/train.py \
     --val-interval  500 \
     --save-interval 1000 \
     --num-workers  8 \
-    --wandb-project windowseat_baseline \
-    --run-name     baseline_11k
+    --wandb-project windowseat_train_balance_sampling\
+    --run-name     train_balance_sampling_11k
 
 EXIT_CODE=$?
 
