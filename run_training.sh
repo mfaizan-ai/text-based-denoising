@@ -1,7 +1,7 @@
 #!/bin/bash
-#SBATCH --job-name=train_task_aware_loss
-#SBATCH --output=runs/train_task_aware_loss/slurm_%j.out
-#SBATCH --error=runs/train_task_aware_loss/slurm_%j.err
+#SBATCH --job-name=combined
+#SBATCH --output=runs/combined_training/slurm_%j.out
+#SBATCH --error=runs/combined_training/slurm_%j.err
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --gres=gpu:1
@@ -26,7 +26,7 @@ source ~/.bashrc
 conda activate windowseat
 
 # Create output dir before SLURM tries to write logs to it
-mkdir -p $PROJECT/runs/train_task_aware_loss
+mkdir -p $PROJECT/runs/combined_training
 
 # ── Job info ───────────────────────────────────────────────────────────────────
 echo "======================================================================"
@@ -55,8 +55,9 @@ python -u $PROJECT/train_windowseat.py \
     --data-root    $PROJECT/dataset \
     --meta-dir     $PROJECT/dataset_metadata \
     --embed-dir    $PROJECT/text/text_embeddings \
-    --output-dir   $PROJECT/runs/train_task_aware_loss \
+    --output-dir   $PROJECT/runs/combined_training \
     --use-task-aware-loss \
+     --use-multitask-lora \
     --total-steps  11000 \
     --batch-size   2 \
     --grad-accum   1 \
@@ -74,8 +75,8 @@ python -u $PROJECT/train_windowseat.py \
     --val-interval  500 \
     --save-interval 1000 \
     --num-workers  8 \
-    --wandb-project train_task_aware_loss \
-    --run-name     train_task_aware_loss_11k
+    --wandb-project combined_training \
+    --run-name     combined_training_11k
 
 EXIT_CODE=$?
 

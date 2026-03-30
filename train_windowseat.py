@@ -1358,12 +1358,12 @@ def main() -> None:
     grad_accum_count = 0
 
     steps_per_epoch = max(1, len(train_ds) // args.batch_size // args.grad_accum)
-    scaler          = torch.amp.GradScaler("cuda")
 
     if is_main():
         csv_logger = MetricsLogger(args.output_dir)
         print(f"\nTraining from step {start_step} → {args.total_steps}")
         print(f"Steps per epoch: ~{steps_per_epoch}")
+        print("  Note: GradScaler disabled — bfloat16 does not require loss scaling.")
 
     # ── Infinite dataloader ───────────────────────────────────────────────────
     def infinite_loader(loader: DataLoader, sampler) -> iter:
@@ -1415,14 +1415,13 @@ def main() -> None:
                         compute_ssim(c, p, data_range=1.0, multichannel=True)
                     ))
 
-        scaler.scale(loss / args.grad_accum).backward()
+        # ── Backward pass (no GradScaler: bfloat16 does not need loss scaling) ─
+        (loss / args.grad_accum).backward()
         grad_accum_count += 1
 
         if grad_accum_count % args.grad_accum == 0:
-            scaler.unscale_(optimizer)
             torch.nn.utils.clip_grad_norm_(lora_params, args.max_grad_norm)
-            scaler.step(optimizer)
-            scaler.update()
+            optimizer.step()
             scheduler.step()
             optimizer.zero_grad()
             global_step += 1
