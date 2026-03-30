@@ -122,3 +122,28 @@ Now install all the dependencies
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
+## Usage
+To train the model, subject a slurm job on the HPC or submit to GPU. Make sure to update paths to train the training successufly. 
+```
+sbatch run_training.sh
+```
+
+similarly the test can be run with slurm
+```
+sbatch run_test.sh
+```
+
+And also a test script can be used on terminal:
+```
+python test.py # default
+
+python test.py \
+      --checkpoint  runs/baseline/checkpoint_best.pt \
+      --data-root   dataset \
+      --meta-dir    dataset_metadata \
+      --embed-dir   text/text_embeddings \
+      --output-dir  runs/baseline
+ 
+```
+this will load the check point and performance inference on the test set, the model return the metrics on the test set 
+and the inference over a few images from each category to see how model denoise those categories. 
