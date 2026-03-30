@@ -6,7 +6,6 @@ from PIL import Image
 from collections import defaultdict
 
 
-
 class DatasetManager:
     """
     Dataset Manager with centralized metadata storage.
