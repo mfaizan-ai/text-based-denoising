@@ -114,7 +114,7 @@ cd text-based-denoising
 
 create a virtual environment in Anaconda and activate it.
 ```
-conda create -n windowseat python=3.10.0 -y 
+conda create -n windowseat python=3.12.11 -y 
 conda activate windowseat
 ```
 Now install all the dependencies
