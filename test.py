@@ -5,7 +5,7 @@ test_windowseat.py
 Evaluation and visualisation script for WindowSeat baseline.
 
 Fixes vs previous version
---------------------------
+-------------------------
   1. FLOW SIGN: z_pred = z_degraded + pred_velocity  (was minus — wrong)
   2. LORA RANK: default=128 to match training (was 64)
   3. RESOLUTION: default=608 to match training (was 512)

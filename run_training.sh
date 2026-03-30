@@ -1,7 +1,7 @@
 #!/bin/bash
-#SBATCH --job-name=windowseat_balance_sampling
-#SBATCH --output=runs/train_balance_sampling/slurm_%j.out
-#SBATCH --error=runs/train_balance_sampling/slurm_%j.err
+#SBATCH --job-name=train_task_aware_loss
+#SBATCH --output=runs/train_task_aware_loss/slurm_%j.out
+#SBATCH --error=runs/train_task_aware_loss/slurm_%j.err
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --gres=gpu:1
@@ -26,7 +26,7 @@ source ~/.bashrc
 conda activate windowseat
 
 # Create output dir before SLURM tries to write logs to it
-mkdir -p $PROJECT/runs/train_balance_sampling
+mkdir -p $PROJECT/runs/train_task_aware_loss
 
 # ── Job info ───────────────────────────────────────────────────────────────────
 echo "======================================================================"
@@ -55,8 +55,8 @@ python -u $PROJECT/train_windowseat.py \
     --data-root    $PROJECT/dataset \
     --meta-dir     $PROJECT/dataset_metadata \
     --embed-dir    $PROJECT/text/text_embeddings \
-    --output-dir   $PROJECT/runs/train_balance_sampling \
-    --use-balanced-sampling \
+    --output-dir   $PROJECT/runs/train_task_aware_loss \
+    --use-task-aware-loss \
     --total-steps  11000 \
     --batch-size   2 \
     --grad-accum   1 \
@@ -74,8 +74,8 @@ python -u $PROJECT/train_windowseat.py \
     --val-interval  500 \
     --save-interval 1000 \
     --num-workers  8 \
-    --wandb-project windowseat_train_balance_sampling\
-    --run-name     train_balance_sampling_11k
+    --wandb-project train_task_aware_loss \
+    --run-name     train_task_aware_loss_11k
 
 EXIT_CODE=$?
 
