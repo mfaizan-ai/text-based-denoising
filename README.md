@@ -154,11 +154,17 @@ To launch gradio to run the demo for restoration
 ```
 # Terminal 1 — on laptop, SSH to cluster then gpu01
 ssh maguire01
+
 cd /lustre/disk/home/users/mfaizan/windowseat-reflection-removal/text-based-denoising
+
 source ../../bash_script/slurm_jobs_submission.sh
+
 srun --jobid=$SLURM_JOBID --pty bash
+
 source ../../bash_scripts/setup_everything.sh
+
 cd /lustre/disk/home/users/mfaizan/windowseat-reflection-removal/text-based-denoising
+
 conda activate windowseat
 
 python app.py \
