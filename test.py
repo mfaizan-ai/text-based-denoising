@@ -83,6 +83,15 @@ TASK_DISPLAY = {
     "reflection":          "Reflection",
 }
 
+ADAPTER_NAMES = ["blur", "rain", "reflection"]
+TASK_TO_ADAPTER = {
+    "blur":                "blur",
+    "raindrop":            "rain",
+    "rainstreak":          "rain",
+    "rainstreak_raindrop": "rain",
+    "reflection":          "reflection",
+}
+
 
 # ── Args ───────────────────────────────────────────────────────────────────────
 def get_args():
@@ -113,6 +122,8 @@ def get_args():
                    help="Must match --lora-rank used during training (default: 128)")
     p.add_argument("--lora-alpha",   type=int, default=128)
     p.add_argument("--lora-dropout", type=float, default=0.0)
+    p.add_argument("--use-multitask-lora", action="store_true",
+                   help="Load adapters for multi-task LoRA checkpoints if present")
     p.add_argument("--seed",         type=int, default=42)
     return p.parse_args()
 
@@ -211,13 +222,8 @@ def load_vae(uri, device):
     return vae
 
 
-def load_transformer_with_lora(uri, device, lora_rank, lora_alpha, lora_dropout):
-    transformer = QwenImageTransformer2DModel.from_pretrained(
-        uri, subfolder="transformer",
-        torch_dtype=torch.bfloat16,
-        device_map=device,
-    )
-    lora_cfg = LoraConfig(
+def _make_lora_config(lora_rank, lora_alpha, lora_dropout):
+    return LoraConfig(
         r=lora_rank,
         lora_alpha=lora_alpha,
         lora_dropout=lora_dropout,
@@ -228,18 +234,51 @@ def load_transformer_with_lora(uri, device, lora_rank, lora_alpha, lora_dropout)
         bias="none",
         init_lora_weights="gaussian",   # must match training config
     )
-    return get_peft_model(transformer, lora_cfg)
 
 
-def load_checkpoint(path, transformer):
+def load_transformer_with_lora(
+    uri, device, lora_rank, lora_alpha, lora_dropout,
+    use_multitask_lora=False,
+):
+    transformer = QwenImageTransformer2DModel.from_pretrained(
+        uri, subfolder="transformer",
+        torch_dtype=torch.bfloat16,
+        device_map=device,
+    )
+    cfg = _make_lora_config(lora_rank, lora_alpha, lora_dropout)
+    if use_multitask_lora:
+        transformer = get_peft_model(transformer, cfg, adapter_name=ADAPTER_NAMES[0])
+        for adapter_name in ADAPTER_NAMES[1:]:
+            transformer.add_adapter(adapter_name, cfg)
+    else:
+        transformer = get_peft_model(transformer, cfg)
+    return transformer
+
+
+def load_checkpoint(path, transformer, use_multitask_lora=False):
     """Load LoRA weights from checkpoint. Prints step and val metrics."""
     print(f"\nLoading checkpoint: {path}")
-    ckpt    = torch.load(path, map_location="cpu")
-    missing, unexpected = transformer.load_state_dict(
-        ckpt["lora_state_dict"], strict=False
-    )
-    if missing or unexpected:
-        print(f"  Missing keys: {len(missing)}  Unexpected: {len(unexpected)}")
+    ckpt = torch.load(path, map_location="cpu")
+    if "lora_state_dict" in ckpt:
+        missing, unexpected = transformer.load_state_dict(
+            ckpt["lora_state_dict"], strict=False
+        )
+        if missing or unexpected:
+            print(f"  Missing keys: {len(missing)}  Unexpected: {len(unexpected)}")
+    elif "lora_state_dicts" in ckpt:
+        if not use_multitask_lora:
+            print("  Warning: checkpoint contains multi-task LoRA state dicts; "
+                  "loading adapters anyway.")
+        for adapter_name, state in ckpt["lora_state_dicts"].items():
+            transformer.set_adapter(adapter_name)
+            missing, unexpected = transformer.load_state_dict(state, strict=False)
+            if missing or unexpected:
+                print(f"  [{adapter_name}] Missing keys: {len(missing)}  "
+                      f"Unexpected: {len(unexpected)}")
+    else:
+        raise KeyError(
+            "Checkpoint does not contain 'lora_state_dict' or 'lora_state_dicts'."
+        )
 
     # FIXED: read "step" not "epoch" — train.py is step-based
     step = ckpt.get("step", "?")
@@ -393,12 +432,21 @@ def main():
 
     # ── Models ────────────────────────────────────────────────────────────────
     print(f"\nLoading base model: {args.base_model}")
-    vae         = load_vae(args.base_model, device)
+    vae = load_vae(args.base_model, device)
+
+    checkpoint_meta = torch.load(args.checkpoint, map_location="cpu")
+    use_multitask = (
+        args.use_multitask_lora or
+        "lora_state_dicts" in checkpoint_meta or
+        checkpoint_meta.get("use_multitask_lora", False)
+    )
+
     transformer = load_transformer_with_lora(
         args.base_model, device,
         args.lora_rank, args.lora_alpha, args.lora_dropout,
+        use_multitask_lora=use_multitask,
     )
-    load_checkpoint(args.checkpoint, transformer)
+    load_checkpoint(args.checkpoint, transformer, use_multitask)
     transformer.to(device)
     transformer.eval()
 
@@ -420,10 +468,25 @@ def main():
                 (B, MAX_SEQ_LEN), dtype=torch.bool, device=device
             )
 
-            z_degraded    = encode(blended, vae)
-            pred_velocity = run_inference(
-                z_degraded, transformer, vae, prompt_embeds, prompt_mask
-            )
+            z_degraded = encode(blended, vae)
+            if use_multitask:
+                pred_velocity = torch.zeros_like(z_degraded)
+                adapter_groups = {}
+                for i, task_name in enumerate(batch["task_name"]):
+                    adapter_groups.setdefault(
+                        TASK_TO_ADAPTER.get(task_name, "blur"),
+                        [],
+                    ).append(i)
+                for adapter_name, indices in adapter_groups.items():
+                    transformer.set_adapter(adapter_name)
+                    pred_velocity[indices] = run_inference(
+                        z_degraded[indices], transformer, vae,
+                        prompt_embeds[indices], prompt_mask[indices],
+                    )
+            else:
+                pred_velocity = run_inference(
+                    z_degraded, transformer, vae, prompt_embeds, prompt_mask
+                )
 
             # FIXED: ADD velocity (paper: z_edit = z_B + v)
             # Previous version subtracted — wrong direction
