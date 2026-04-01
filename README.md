@@ -147,3 +147,30 @@ python test.py \
 ```
 this will load the check point and performance inference on the test set, the model return the metrics on the test set 
 and the inference over a few images from each category to see how model denoise those categories. 
+
+
+## Running demo with Gradio
+To launch gradio to run the demo for restoration
+```
+# Terminal 1 — on laptop, SSH to cluster then gpu01
+ssh maguire01
+cd /lustre/disk/home/users/mfaizan/windowseat-reflection-removal/text-based-denoising
+source ../../bash_script/slurm_jobs_submission.sh
+srun --jobid=$SLURM_JOBID --pty bash
+source ../../bash_scripts/setup_everything.sh
+cd /lustre/disk/home/users/mfaizan/windowseat-reflection-removal/text-based-denoising
+conda activate windowseat
+
+python app.py \
+    --checkpoint runs/baseline_full/checkpoint_best.pt \
+    --embed-dir  text/text_embeddings \
+    --host 0.0.0.0 \
+    --port 7862
+
+# Terminal 2 — fresh terminal on laptop (not SSH'd)
+ssh -L 7862:gpu01:7862 maguire01
+
+# Browser
+http://localhost:7862
+```
+![alt text](https://github.com/mfaizan-ai/text-based-denoising/blob/main/inference_images/gradio_demo.png)
