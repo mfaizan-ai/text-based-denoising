@@ -157,7 +157,7 @@ ssh maguire01
 
 cd /lustre/disk/home/users/mfaizan/windowseat-reflection-removal/text-based-denoising
 
-source ../../bash_script/slurm_jobs_submission.sh
+source ../../bash_scripts/slurm_jobs_submission.sh
 
 srun --jobid=$SLURM_JOBID --pty bash
 
