@@ -332,7 +332,6 @@ def build_ui() -> gr.Blocks:
 
     with gr.Blocks(
         title="WindowSeat — Image Restoration Demo",
-        theme=gr.themes.Soft(),
     ) as demo:
 
         gr.Markdown(
@@ -461,4 +460,5 @@ if __name__ == "__main__":
         server_name=args.host,
         server_port=args.port,
         share=args.share,
+        theme=gr.themes.Soft(),
     )
