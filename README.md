@@ -142,7 +142,7 @@ cd /lustre/disk/home/users/mfaizan/windowseat-reflection-removal/text-based-deno
 ```
 now actiavate the conda environment for the denoising diffusion, depending on your conda name:
 ```
-conda activate windowseat
+conda activate windowseat_test_env
 ```
 for accessing the dataset and the text embeddings, set hte project path so we can use that in training and test
 ```
