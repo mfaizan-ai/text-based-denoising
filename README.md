@@ -223,6 +223,10 @@ python app.py \
     --host 0.0.0.0 \
     --port 7862
 
+# if gradio can't be found please install wiht 
+pip install gradio
+
+
 # Terminal 2 — fresh terminal on laptop (not SSH'd)
 ssh -L 7862:gpu01:7862 maguire01
 
