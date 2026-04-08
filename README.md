@@ -200,7 +200,11 @@ and the inference over a few images from each category to see how model denoise 
 
 
 ## Running demo with Gradio
-To launch gradio to run the demo for restoration
+To launch gradio to run the demo for restoration, its recommended that you clone the repo locally so you can use those for testing with the app: if you can't find then in that computer you can find at
+```
+/Users/faizan/Documents/PhD/advance_ai/project/demo_dataset
+```
+
 ```
 # Terminal 1 — on laptop, SSH to cluster then gpu01
 ssh maguire01
