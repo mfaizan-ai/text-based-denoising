@@ -125,6 +125,7 @@ To train the model, subject a slurm job on the HPC or submit to GPU. Make sure t
 ```
 sbatch run_training.sh
 ```
+**Note**: for better reproducibility and viewing on the command line, its NOT recommended to run the slurm script for either test or training. The command that starts with ```sbatch```, they are written for longer training times and test. 
 
 to run with the command line, make sure you activate the conda environment and on hte compute node, to get a compute node: 
 ```
