@@ -186,8 +186,6 @@ sbatch run_test.sh
 
 And also a test script can be used on terminal:
 ```
-python test.py # default
-
 python test.py \
       --checkpoint  $PROJECT/runs/baseline_full/checkpoint_best.pt \
       --data-root   $PROJECT/dataset \
