@@ -128,6 +128,25 @@ To train the model, subject a slurm job on the HPC or submit to GPU. Make sure t
 sbatch run_training.sh
 ```
 
+to run with the command line, make sure you activate the conda environment and on hte compute node, to get a compute node: 
+```
+source /lustre/disk/home/users/mfaizan/bash_scripts/slurm_jobs_submission.sh
+srun --jobid=$SLURM_JOBID --pty bash
+```
+and activate cuda for getting the gpu:
+```
+source /lustre/disk/home/users/mfaizan/bash_scripts/setup_everything.sh
+```
+after doing this you must cd into the project directory, depending on the project location where you cloned, in my case: 
+
+```
+cd /lustre/disk/home/users/mfaizan/windowseat-reflection-removal/text-based-denoising
+```
+now actiavate the conda environment for the denoising diffusion, depending on your conda name:
+```
+conda activate windowseat
+```
+
 similarly the test can be run with slurm
 ```
 sbatch run_test.sh

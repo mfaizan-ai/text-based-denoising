@@ -1,0 +1,4 @@
+name: windowseat
+channels:
+  - defaults
+prefix: /lustre/disk/home/users/mfaizan/miniconda3/envs/windowseat
