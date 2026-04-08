@@ -155,7 +155,7 @@ python train_windowseat.py \
     --data-root    $PROJECT/dataset \
     --meta-dir     $PROJECT/dataset_metadata \
     --embed-dir    $PROJECT/text/text_embeddings \
-    --output-dir   $PROJECT/runs/combined_test_training \
+    --output-dir   runs/combined_test_training \
     --use-task-aware-loss \
      --use-multitask-lora \
     --total-steps  11000 \
