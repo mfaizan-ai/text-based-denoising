@@ -144,6 +144,40 @@ now actiavate the conda environment for the denoising diffusion, depending on yo
 ```
 conda activate windowseat
 ```
+for accessing the dataset and the text embeddings, set hte project path so we can use that in training and test
+```
+PROJECT=/lustre/disk/home/users/mfaizan/windowseat-reflection-removal/text-based-denoising
+```
+then you run training on command line:
+
+```
+python train_windowseat.py \
+    --data-root    $PROJECT/dataset \
+    --meta-dir     $PROJECT/dataset_metadata \
+    --embed-dir    $PROJECT/text/text_embeddings \
+    --output-dir   $PROJECT/runs/combined_test_training \
+    --use-task-aware-loss \
+     --use-multitask-lora \
+    --total-steps  11000 \
+    --batch-size   2 \
+    --grad-accum   1 \
+    --lr-start     1e-5 \
+    --lr-peak      1e-4 \
+    --lr-decay     5e-6 \
+    --warmup-steps 100 \
+    --resolution   608 \
+    --lambda-psnr  0.1 \
+    --lambda-ssim  20.0 \
+    --lora-rank    128 \
+    --lora-alpha   128 \
+    --lora-dropout 0.0 \
+    --log-interval  50 \
+    --val-interval  500 \
+    --save-interval 1000 \
+    --num-workers  8 \
+    --wandb-project combined_test_training \
+    --run-name     combined_test_training_11k
+```
 
 similarly the test can be run with slurm
 ```
@@ -155,11 +189,11 @@ And also a test script can be used on terminal:
 python test.py # default
 
 python test.py \
-      --checkpoint  runs/baseline/checkpoint_best.pt \
-      --data-root   dataset \
-      --meta-dir    dataset_metadata \
-      --embed-dir   text/text_embeddings \
-      --output-dir  runs/baseline
+      --checkpoint  $PROJECT/runs/baseline_full/checkpoint_best.pt \
+      --data-root   $PROJECT/dataset \
+      --meta-dir    $PROJECT/dataset_metadata \
+      --embed-dir   $PROJECT/text/text_embeddings \
+      --output-dir  runs/test_run
  
 ```
 this will load the check point and performance inference on the test set, the model return the metrics on the test set 
