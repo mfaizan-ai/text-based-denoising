@@ -2,9 +2,16 @@
 This project implements diffusion based transformer model to denoise the images with text prompt guidance.
 
 ## Dataset Information
-* **New Dataset Link:** [Download from Google Drive](https://drive.google.com/file/d/1PQRIKkswj6-XmbolhidfewocbghjoS1t/view?usp=sharing)
-* **Description:** The dataset is reconstructed in a better structure for improved performance, with data from public and 3,000 synthesized images (rainstreak, raindrop, reflection).
 
+> **Note:** Our project utilizes a custom dataset, distinct from the one used in the original WindowSeat project.
+
+* **Dataset Access:** [Download via Google Drive](https://drive.google.com/file/d/1PQRIKkswj6-XmbolhidfewocbghjoS1t/view?usp=sharing)
+* **Overview:** To enhance model performance, we reorganized the data with an optimized structure. 
+* **Composition:** The dataset combines selected public data with **3,000 synthesized images** (including rainstreaks, raindrops, and reflections) to improve robustness.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b8981125-4daf-44e5-ac7f-e9ee65bd1a01" width="800" alt="Dataset Composition Table" />
+</p>
 
 ## Dataset Preparation (download + synthesis, pre-split)
 1.  Download the dataset, unzip it, and place it in the **root** directory.
