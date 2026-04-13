@@ -6,6 +6,7 @@ This project implements diffusion based transformer model to denoise the images 
 > **Note:** Our project utilizes a custom dataset, distinct from the one used in the original WindowSeat project.
 
 * **Dataset Access:** [Download via Google Drive](https://drive.google.com/file/d/1PQRIKkswj6-XmbolhidfewocbghjoS1t/view?usp=sharing)
+* **Text Embeddings and trained checkpoints Access:** [Download via Google Drive](https://drive.google.com/drive/folders/1wVeZYKeBwjOm0uP_PJkRQE9gcRwcQ4F7?usp=share_link)
 * **Overview:** To enhance model performance, we reorganized the data with an optimized structure. 
 * **Composition:** The dataset combines selected public data with **3,000 synthesized images** (including rainstreaks, raindrops, and reflections) to improve robustness.
 
