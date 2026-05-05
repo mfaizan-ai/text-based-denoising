@@ -26,36 +26,36 @@ This project implements diffusion based transformer model to denoise the images 
 ## Dataset Structure 
 The image dataset is organzied as follows: 
 ```
-🟦 dataset_full
-├── 🟩 blur
-│   └── 🟢 real
-│       ├── ⚪ blended
-│       └── ⚪ clean
-├── 🟩 raindrop
-│   ├── 🟢 real
-│   │   ├── ⚪ blended
-│   │   └── ⚪ clean
-│   └── 🟢 syn_zka
-│       ├── ⚪ blended
-│       └── ⚪ clean
-├── 🟩 rainstreak
-│   ├── 🟢 real
-│   │   ├── ⚪ blended
-│   │   └── ⚪ clean
-│   └── 🟢 syn_zka
-│       ├── ⚪ blended
-│       └── ⚪ clean
-├── 🟩 rainstreak_raindrop
-│   └── 🟢 real
-│       ├── ⚪ blended
-│       └── ⚪ clean
-└── 🟩 reflection
-    ├── 🟢 syn
-    │   ├── ⚪ blended
-    │   └── ⚪ clean
-    └── 🟢 syn_zka
-        ├── ⚪ blended
-        └── ⚪ clean
+dataset_full
+├── blur
+│   └── real
+│       ├── blended
+│       └── clean
+├── raindrop
+│   ├── real
+│   │   ├── blended
+│   │   └── clean
+│   └── syn_zka
+│       ├── blended
+│       └── clean
+├── rainstreak
+│   ├── real
+│   │   ├── blended
+│   │   └── clean
+│   └── syn_zka
+│       ├── blended
+│       └── clean
+├── rainstreak_raindrop
+│   └── real
+│       ├── blended
+│       └── clean
+└── reflection
+    ├── syn
+    │   ├── blended
+    │   └── clean
+    └── syn_zka
+        ├── blended
+        └── clean
 ```
 These images are denoised by DIT, so which is text guided network that takes text embeddings as input, so we create text embeddings from the texttual data and store it, these embeddings are generated
 for each task, for instance we have text prompts for blur taks that look like the following:
